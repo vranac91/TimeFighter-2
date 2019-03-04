@@ -117,8 +117,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun showEndGameInfo() {
         val dialogTitle = getString(R.string.end_game_title)
-        val winner = if (playerOneScore > playerTwoScore) "Player 1" else if (playerTwoScore < playerOneScore) "Player 2" else "No one"
-        val dialogMessage = getString(R.string.end_game_text , winner)
+        val winner = if (playerOneScore > playerTwoScore) "Player 1" else if (playerOneScore < playerTwoScore) "Player 2" else "No one"
+        val dialogMessage = getString(R.string.end_game_text, playerOneScore.toString(), playerTwoScore.toString(), winner)
         val builder = AlertDialog.Builder(this)
         builder.setTitle(dialogTitle)
         builder.setMessage(dialogMessage)

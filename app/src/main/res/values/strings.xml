@@ -10,5 +10,5 @@
     <string name="welcome_title">Welcome to TimeFighter 2!</string>
     <string name="welcome_message">Tap on the button as fast as you can - the fastest one wins!</string>
     <string name="end_game_title">Game Over</string>
-    <string name="end_game_text">%s wins!</string>
+    <string name="end_game_text">Result: %s : %s\n%s wins!</string>
 </resources>
