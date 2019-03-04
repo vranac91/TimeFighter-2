@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
         builder.create().show()
     }
 
-    // throw info dialog on game end
+    // throw info dialog on game ending
     private fun showEndGameInfo() {
         val dialogTitle = getString(R.string.end_game_title)
         val winner = if (playerOneScore > playerTwoScore) "Player 1" else if (playerOneScore < playerTwoScore) "Player 2" else "No one"
