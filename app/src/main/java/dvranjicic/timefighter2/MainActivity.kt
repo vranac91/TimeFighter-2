@@ -95,6 +95,7 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "onDestroy called.")
     }
 
+    // throws dialog when clicking on Info button
     private fun showAboutInfo() {
         val dialogTitle = getString(R.string.about_title, BuildConfig.VERSION_NAME)
         val dialogMessage = getString(R.string.about_text)
@@ -104,6 +105,7 @@ class MainActivity : AppCompatActivity() {
         builder.create().show()
     }
 
+    // dialog when opening the app
     private fun showWelcomeInfo() {
         val dialogTitle = getString(R.string.welcome_title)
         val dialogMessage = getString(R.string.welcome_message)
@@ -118,11 +120,11 @@ class MainActivity : AppCompatActivity() {
     // throw info dialog on game ending
     private fun showEndGameInfo() {
         val dialogTitle = getString(R.string.end_game_title)
-        //val winner = if (playerOneScore > playerTwoScore) "Player 1" else if (playerOneScore < playerTwoScore) "Player 2" else "No one"
-        //val dialogMessage = getString(R.string.end_game_text, playerOneScore.toString(), playerTwoScore.toString(), winner)
+        val winner = if (playerOneScore > playerTwoScore) "Player 1" else if (playerOneScore < playerTwoScore) "Player 2" else "No one"
+        val dialogMessage = getString(R.string.end_game_text, playerOneScore.toString(), playerTwoScore.toString(), winner)
         val builder = AlertDialog.Builder(this)
         builder.setTitle(dialogTitle)
-        //builder.setMessage(dialogMessage)
+        builder.setMessage(dialogMessage)
         builder.setPositiveButton("OK", null)
         builder.setCancelable(false)
         builder.create().show()
