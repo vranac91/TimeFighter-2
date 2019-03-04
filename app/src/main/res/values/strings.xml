@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TimeFighter 2</string>
+    <string name="player_one_score">Player 1 Score: %s</string>
+    <string name="player_two_score">Player 2 Score: %s</string>
+    <string name="time_left_string">Time Left: %s</string>
+    <string name="button_text">Hit Me!</string>
+    <string name="about_menu">About</string>
+    <string name="about_title">TimeFighter 2 v%s</string>
+    <string name="about_text">Proudly developed by dvranjicic</string>
+    <string name="welcome_title">Welcome to TimeFighter 2!</string>
+    <string name="welcome_message">Tap on the button as fast as you can - the fastest one wins!</string>
+    <string name="end_game_title">Game Over</string>
+    <string name="end_game_text">%s wins!</string>
+</resources>
